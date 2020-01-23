@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Générateur de Citation</title>
+        <meta name="description" content="Un générateur de citation aléatoire">
+        
+        <link rel="stylesheet" href="css/citationmain.css">
+        <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+        
+    </head>
+    
+    <body>
+        <h1>Générateur de Citations</h1>
+        <div id="gamechoice">
+        <p>Souhaitez vous jouer dans la console ou sur la page?</p>
+            <form id="formgame">
+                <label for="console">Console</label><input type="radio" name="jeu" value="console" id="console" required/>
+                <input type="radio" name="jeu" value="page" id="page"/><label for="page">Page</label><br/>
+                <input type='submit' value="Envoyer" class="buttonstyle">
+            </form>
+        </div>
+        
+        <div id="pagecontent">
+            <p>Choisissez un générateur puis entrez le nombre de citations que vous souhaitez générer!</p>
+            <form id="quotecreation">
+                <label for="french">Français</label><input type="radio" name="generator" value="french" id="french" required/>
+                <input type="radio" name="generator" value="english" id="english" /><label for="english">English</label><br/>
+                <label for="quotenumber">Nombre de citations </label><input type="text" name="quotenumber" id="quotenumber" required /> (entre 1 et 5)<br/>
+                <input type="submit" value="Générer" class="buttonstyle"/>
+                <input type="reset" value="Effacer" class="buttonstyle" id="effacer"/>
+            </form>
+        
+            <p id="numbererror">Ceci n'est pas un chiffre que nous acceptons. Choisissez entre 1 et 5!</p>
+            <p id="notanumbererror">Ceci n'est pas un chiffre, veuillez renseigner un chiffre!</p>
+        
+            <h2 id='title'>Vos Citations</h2>
+            <div id="quotecontainer">
+                <div id="generatedquotes">
+                </div>
+            </div>
+        </div>
+        
+    
+        <script src="js/citationmain.js"></script>
+        
+    </body>
+
+</html>

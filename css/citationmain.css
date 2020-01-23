@@ -1,0 +1,52 @@
+body {
+    background: #f9d6e6;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Shrikhand', cursive;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+h1 {
+    font-family: 'Berkshire Swash', cursive;
+    color: #082567;
+    margin-bottom: 50px;
+    text-decoration: underline;
+}
+.buttonstyle {
+    background-color: #810732;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 1em;
+    font-family: 'Shrikhand', cursive;
+    cursor: pointer;
+}
+#pagecontent {
+    visibility: hidden;
+}
+#quotenumber {
+    border-radius: 30px;
+    padding: 10px;
+}
+input {
+    margin: 20px;
+}
+#numbererror, #notanumbererror {
+    display: none;
+    color: #b80d0d;
+    font-family: Impact, cursive, sans-serif;
+}
+#quotecontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#generatedquotes {
+    color: #18345a;
+    font-family: 'Amaranth', sans-serif;
+    text-align: left;
+}
+#title{
+    visibility: hidden;
+    margin-top: 50px;
+}
